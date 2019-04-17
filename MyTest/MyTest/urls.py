@@ -19,5 +19,5 @@ from django.conf.urls import url, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    url('WebMonitor/', include('WebMonitor.urls'))
+    url('WebMonitor/', include('WebMonitor.urls', namespace='WebMonitor'))
 ]
