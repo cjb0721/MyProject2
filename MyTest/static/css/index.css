@@ -1,0 +1,53 @@
+div.container{
+    width: 95%;
+    margin: 0 auto;
+    padding: 2px;
+    background-color: skyblue;
+}
+
+.container>.top{
+    margin: 2px;
+    padding: 5px;
+    background-color: black;
+    color: white;
+}
+
+.container>.bottom{
+    width: 85%;
+    margin: 0 auto;
+    padding: 5px;
+    background-color: gray;
+}
+
+.container>.bottom>.forms{
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.container>.bottom>.bottom_title{
+    height: 40px;
+    line-height:40px;
+    background-color: #00f6ff;
+}
+
+.container>.bottom>.bottom_body{
+    height: 600px;
+    background-color: #0ec3f3;
+}
+
+.container>.bottom>.bottom_body>.child_left{
+    width: 60%;
+    height: 600px;
+    background-color: lightgray;
+    float: left;
+}
+
+.container>.bottom>.bottom_body>.child_right{
+    width: 40%;
+    height: 600px;
+    background-color: lightblue;
+    float:left;
+}
+
+

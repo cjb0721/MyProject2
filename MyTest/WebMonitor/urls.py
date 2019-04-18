@@ -6,6 +6,6 @@ app_name = 'WebMonitor'
 
 
 urlpatterns = [
-    url(r'webindex/', views.index, name='index'),
-    url(r'weblist/$', views.list, name='list'),
+    url(r'^$', views.index, name='index'),
+    url(r'list/$', views.list, name='list'),
 ]

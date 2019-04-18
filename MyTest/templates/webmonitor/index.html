@@ -3,12 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <title>index</title>
+
+    <link rel="stylesheet" href="/static/css/index.css">
+
 </head>
 <body>
-    <h2>index</h2>
-    <h3>{{ username }}</h3>
-    {# <a href="/WebMonitor/list/">into the list</a> #}
-    <a href="{% url 'WebMonitor:list' %}">into the list</a>
+
+    <div class="container">
+
+        <div class="top">
+            <h2>业务质量监控</h2>
+        </div>
+        <div class="bottom">
+
+            <div class="forms">
+
+                <form action="" method="post">
+
+                    选择业务：
+                    <select name="" id="">
+                        <option value="">QQ首页</option>
+                        <option value="">百度首页</option>
+                        <option value="">淘宝首页</option>
+                        <option value="">京东首页</option>
+                    </select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    起始时间：<input type="text" name="">
+                    结束时间：<input type="text" name="">&nbsp;&nbsp;
+                    <input type="submit" value="提交">
+                    <input type="button" value="添加应用">
+
+                </form>
+
+            </div>
+
+            <div class="bottom_title">
+
+                <h4>京东首页 - <span>监测数据图表</span><span>[当前]</span></h4>
+
+            </div>
+
+            <div class="bottom_body">
+
+                <div class="child_left"></div>
+                <div class="child_right">
+
+                    <div class="child_right_up"></div>
+                    <div class="child_right_down"></div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
 
 </body>
 </html>
