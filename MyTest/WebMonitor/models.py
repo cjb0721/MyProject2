@@ -11,6 +11,9 @@ class Host_info(models.Model):
     alarm_type = models.CharField(max_length=8)
     alarm_info = models.CharField(max_length=30)
 
+    def __str__(self):
+        return self.app_name
+
 
 # 监控数据表
 class Monitor_data(models.Model):

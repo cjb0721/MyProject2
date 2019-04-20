@@ -12,7 +12,7 @@
     <div class="container">
 
         <div class="top">
-            <h2>业务质量监控</h2>
+            <h2>{{ sys_name }}</h2>
         </div>
         <div class="bottom">
 
@@ -22,10 +22,11 @@
 
                     选择业务：
                     <select name="" id="">
-                        <option value="">QQ首页</option>
-                        <option value="">百度首页</option>
-                        <option value="">淘宝首页</option>
-                        <option value="">京东首页</option>
+                        {% for h in host %}
+                            <option value="{{h.id}}"> {{ h.app_name }} </option>
+                        {% empty %}
+                            <option value=""> NULL </option>
+                        {% endfor %}
                     </select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     起始时间：<input type="text" name="">
                     结束时间：<input type="text" name="">&nbsp;&nbsp;

@@ -5,6 +5,7 @@ from .models import *
 
 class Host_info_Admin(admin.ModelAdmin):
     list_filter = ['app_name', 'idc']
+    search_fields = ['app_name', ]
     list_per_page = 10
 
 
