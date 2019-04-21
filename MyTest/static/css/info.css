@@ -1,0 +1,30 @@
+div.container{
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 80px;
+    padding: 2px;
+    background-color: skyblue;
+}
+
+.container>.title{
+    height: 23px;
+    line-height: 23px;
+    padding: 3px;
+    background-color: #808080;
+}
+
+.container>.info{
+    min-height: 100px;
+    line-height: 100px;
+    text-align: center;
+    background-color: #FFFFFF;
+}
+
+.container>.info textarea{
+    width: 95%;
+    padding: 3px;
+}
+
+.container>.info .back{
+
+}

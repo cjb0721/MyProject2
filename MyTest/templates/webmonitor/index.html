@@ -18,18 +18,18 @@
 
             <div class="forms">
 
-                <form action="" method="post">
+                <form action="#" method="post">
 
                     选择业务：
-                    <select name="" id="">
+                    <select name="app_id" id="app_id">
                         {% for h in host %}
                             <option value="{{h.id}}"> {{ h.app_name }} </option>
                         {% empty %}
                             <option value=""> NULL </option>
                         {% endfor %}
                     </select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    起始时间：<input type="text" name="">
-                    结束时间：<input type="text" name="">&nbsp;&nbsp;
+                    起始时间：<input type="datetime-local" name="start_time" id="start_time" onfocus="WdatePicker({skin:'whyGreen',dateFmt:'yyyy-MM-dd HH:mm:ss',minDate:'2010-11-18 00:00:00'})">
+                    结束时间：<input type="datetime-local" name="end_time" id="end_time" onfocus="WdatePicker({skin:'whyGreen',dateFmt:'yyyy-MM-dd HH:mm:ss',minDate:'2010-11-18 00:00:00'})">&nbsp;&nbsp;
                     <input type="submit" value="提交">
                     <input type="button" value="添加应用">
 

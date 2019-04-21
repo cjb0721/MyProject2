@@ -8,4 +8,5 @@ app_name = 'WebMonitor'
 urlpatterns = [
     url(r'^$', views.index, name='index'),
     url(r'list/$', views.list, name='list'),
+    # url(r'info/$', views.info, name='info'),
 ]
