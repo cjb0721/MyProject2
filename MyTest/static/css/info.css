@@ -1,5 +1,5 @@
 div.container{
-    width: 50%;
+    width: 30%;
     margin: 0 auto;
     margin-top: 80px;
     padding: 2px;
@@ -14,17 +14,18 @@ div.container{
 }
 
 .container>.info{
-    min-height: 100px;
-    line-height: 100px;
     text-align: center;
     background-color: #FFFFFF;
 }
 
 .container>.info textarea{
-    width: 95%;
+    width: 97%;
     padding: 3px;
+    resize: none;
 }
-
 .container>.info .back{
-
+    line-height: 40px;
+}
+.container>.info>.back a{
+    text-decoration: none;
 }
