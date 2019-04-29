@@ -22,7 +22,7 @@
 
                     选择业务：
                     <select name="app_id" id="app_id">
-                        {% for h in host %}
+                        {% for h in host_info_obj %}
                             <option value="{{h.id}}"> {{ h.app_name }} </option>
                         {% empty %}
                             <option value=""> NULL </option>
@@ -37,23 +37,102 @@
 
             </div>
 
-            <div class="bottom_title">
 
-                <h4>京东首页 - <span>监测数据图表</span><span>[当前]</span></h4>
+            {% if host_info_row %}
+                {% ifequal user_find '1' %}
+                    <div class="bottom_title">
 
-            </div>
+                        <h4>京东首页 - <span>监测数据图表</span><span>[自定义]</span></h4>
 
-            <div class="bottom_body">
+                    </div>
 
-                <div class="child_left"></div>
-                <div class="child_right">
+                    <div class="bottom_body">
 
-                    <div class="child_right_up"></div>
-                    <div class="child_right_down"></div>
+                        <div class="child_left"></div>
+                        <div class="child_right">
 
-                </div>
+                            <div class="child_right_up"></div>
+                            <div class="child_right_down"></div>
 
-            </div>
+                        </div>
+
+                    </div>
+                {% else %}
+                    <div class="bottom_title">
+
+                        <h4>京东首页 - <span>监测数据图表</span><span>[当前]</span></h4>
+
+                    </div>
+
+                    <div class="bottom_body">
+
+                        <div class="child_left"></div>
+                        <div class="child_right">
+
+                            <div class="child_right_up"></div>
+                            <div class="child_right_down"></div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="bottom_title">
+
+                        <h4>京东首页 - <span>监测数据图表</span><span>[日]</span></h4>
+
+                    </div>
+
+                    <div class="bottom_body">
+
+                        <div class="child_left"></div>
+                        <div class="child_right">
+
+                            <div class="child_right_up"></div>
+                            <div class="child_right_down"></div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="bottom_title">
+
+                        <h4>京东首页 - <span>监测数据图表</span><span>[月]</span></h4>
+
+                    </div>
+
+                    <div class="bottom_body">
+
+                        <div class="child_left"></div>
+                        <div class="child_right">
+
+                            <div class="child_right_up"></div>
+                            <div class="child_right_down"></div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="bottom_title">
+
+                        <h4>京东首页 - <span>监测数据图表</span><span>[年]</span></h4>
+
+                    </div>
+
+                    <div class="bottom_body">
+
+                        <div class="child_left"></div>
+                        <div class="child_right">
+
+                            <div class="child_right_up"></div>
+                            <div class="child_right_down"></div>
+
+                        </div>
+
+                    </div>
+
+                {% endifequal %}
+
+            {% endif %}
 
 
         </div>
